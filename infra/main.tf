@@ -14,7 +14,7 @@ resource "azurerm_resource_group" "rg" {
 }
 
 resource "azurerm_api_management" "apim" {
-  name                = "apim-dess-${random_string.suffix.result}"
+  name                = "apim-dess123-${random_string.suffix.result}"
   location            = "East US"
   resource_group_name = azurerm_resource_group.rg.name
   publisher_name      = "My Org"
