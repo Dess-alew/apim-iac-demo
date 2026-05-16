@@ -5,7 +5,7 @@ provider "azurerm" {
 resource "azurerm_resource_group" "rg" {
   name     = "rg-apim-demo"
   location = "East US"
-}
+}f
 
 resource "azurerm_api_management" "apim" {
   name                = "my-apim-demo"
