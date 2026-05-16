@@ -1,11 +1,16 @@
 provider "azurerm" {
   features {}
+  subscription_id = var.subscription_id
+}
+
+variable "subscription_id" {
+  default = ""
 }
 
 resource "azurerm_resource_group" "rg" {
   name     = "rg-apim-demo"
   location = "East US"
-}f
+}
 
 resource "azurerm_api_management" "apim" {
   name                = "my-apim-demo"
